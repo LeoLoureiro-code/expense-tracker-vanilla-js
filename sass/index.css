@@ -1,0 +1,200 @@
+html * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Courier New', Courier, monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+body #balance {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+body button {
+  -webkit-transition: all 0.5;
+  transition: all 0.5;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 15px 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+body .Btn-income {
+  background-color: #08bd08;
+}
+
+body .Btn-income:hover {
+  background-color: #07a007;
+}
+
+body .Btn-income:active, body .Btn-expense:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+body .Btn-expense {
+  background-color: #ca0909;
+}
+
+body .Btn-expense:hover {
+  background-color: #ac0909;
+}
+
+body .container {
+  text-align: center;
+  min-width: 350px;
+  position: relative;
+}
+
+body .delete {
+  cursor: pointer;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  position: absolute;
+  height: 70%;
+  width: 5%;
+  left: -5%;
+  background-color: #f10202;
+  color: #fff;
+}
+
+body .expense {
+  color: #ca0909;
+}
+
+body form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+body li {
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-top: 15px;
+  height: 2rem;
+  width: 80%;
+}
+
+body li:active .delete, body li:hover .delete {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+body h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+body h3 {
+  border-bottom: 1px solid #000;
+  margin: 20px 0;
+}
+
+body .income {
+  color: #08bd08;
+}
+
+body .income, body .expense {
+  margin: 15px;
+}
+
+body .incomeExpense {
+  background-color: #fff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+body .incomeExpense > div {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+
+body input {
+  width: 90%;
+  height: 1.5rem;
+  border: 1px solid #c0bebe;
+  margin: 5px 0;
+  padding: 5px;
+  outline: none;
+}
+
+body label {
+  display: block;
+  text-align: start;
+  margin: 10px 0;
+}
+
+body .negative {
+  border-right: 5px solid #ca0909;
+}
+
+body .positive {
+  border-right: 5px solid #08bd08;
+}
+
+body .vl {
+  border-left: 2px solid #eee;
+  height: 80px;
+}
+/*# sourceMappingURL=index.css.map */
